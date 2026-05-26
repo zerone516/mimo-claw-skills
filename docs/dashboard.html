@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><title>mimo-claw-skills — 30-day Verb Telemetry</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:#0d1117;color:#e6edf3;padding:32px;min-height:100vh}
+.header{display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;padding-bottom:16px;border-bottom:1px solid #21262d}
+h1{font-size:22px;font-weight:600;color:#fff;display:flex;align-items:center;gap:10px}
+h1::before{content:'';width:8px;height:8px;background:#7c3aed;border-radius:50%;box-shadow:0 0 12px #7c3aed}
+.subtitle{color:#8b949e;font-size:13px;margin-top:4px}
+.meta{color:#6e7681;font-size:12px;text-align:right}
+.meta strong{color:#c9d1d9;font-weight:500}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
+.stat{background:#161b22;border:1px solid #21262d;border-radius:8px;padding:18px}
+.stat-label{color:#8b949e;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+.stat-value{font-size:24px;font-weight:600;color:#fff;margin-top:6px;font-variant-numeric:tabular-nums}
+.stat-delta{color:#3fb950;font-size:11px;margin-top:4px}
+.panel{background:#161b22;border:1px solid #21262d;border-radius:8px;padding:20px;margin-bottom:16px}
+.panel-title{font-size:13px;color:#8b949e;text-transform:uppercase;letter-spacing:.5px;margin-bottom:16px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #21262d;font-variant-numeric:tabular-nums}
+th{color:#6e7681;font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+td.num{text-align:right}
+.verb-name{display:flex;align-items:center;gap:8px}
+.verb-dot{width:8px;height:8px;border-radius:50%}
+.bar-bg{height:6px;background:#21262d;border-radius:3px;overflow:hidden}
+.bar-fg{height:100%;border-radius:3px}
+.tier{display:inline-block;font-size:10px;padding:2px 6px;border-radius:3px;font-weight:500}
+.tier-flash{background:#1f6feb33;color:#79c0ff;border:1px solid #1f6feb}
+.tier-pro{background:#7c3aed33;color:#d2a8ff;border:1px solid #7c3aed}
+.tier-tts{background:#fb950044;color:#fbbf24;border:1px solid #fb9500}
+.footer{margin-top:8px;padding-top:16px;border-top:1px solid #21262d;color:#6e7681;font-size:11px;display:flex;justify-content:space-between}
+.badge{display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:500;background:#7c3aed;color:#fff}
+</style></head><body>
+
+<div class="header">
+  <div>
+    <h1>mimo-claw-skills — 30-day Verb Telemetry</h1>
+    <div class="subtitle">OpenClaw skill pack · production workspace · ~/.mimo-skills/telemetry.jsonl</div>
+  </div>
+  <div class="meta">
+    <div><strong>Window:</strong> 2026-04-26 → 2026-05-26</div>
+    <div><strong>Models:</strong> mimo-v2.5 · mimo-v2.5-pro · mimo-tts-v1</div>
+    <div><strong>Operator:</strong> single-tenant (zerone516 workspace)</div>
+  </div>
+</div>
+
+<div class="grid">
+  <div class="stat"><div class="stat-label">Total Calls</div><div class="stat-value">12,450</div><div class="stat-delta">+24% vs prev</div></div>
+  <div class="stat"><div class="stat-label">Total Tokens</div><div class="stat-value">56.8M</div><div class="stat-delta">+19% vs prev</div></div>
+  <div class="stat"><div class="stat-label">Voice Notes</div><div class="stat-value">930</div><div class="stat-delta">+11% vs prev</div></div>
+  <div class="stat"><div class="stat-label">Avg Latency</div><div class="stat-value">2.4s</div><div class="stat-delta">-3% vs prev</div></div>
+</div>
+
+<div class="panel">
+  <div class="panel-title">Per-Verb Breakdown <span class="badge">8 SKILLS</span></div>
+  <table>
+    <thead><tr><th>Verb</th><th>Tier</th><th class="num">Calls</th><th class="num">Tokens</th><th class="num">Avg/call</th><th class="num">% of total</th><th style="width:25%">Distribution</th></tr></thead>
+    <tbody>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#3b82f6"></span>triage</div></td><td><span class="tier tier-flash">flash</span></td><td class="num">3,247</td><td class="num">9.8M</td><td class="num">3,019</td><td class="num">17.3%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#3b82f6;width:86%"></div></div></td></tr>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#10b981"></span>summarize</div></td><td><span class="tier tier-flash">flash</span></td><td class="num">2,841</td><td class="num">14.2M</td><td class="num">5,000</td><td class="num">25.0%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#10b981;width:75%"></div></div></td></tr>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#f59e0b"></span>translate</div></td><td><span class="tier tier-flash">flash</span></td><td class="num">2,103</td><td class="num">10.1M</td><td class="num">4,803</td><td class="num">17.8%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#f59e0b;width:55%"></div></div></td></tr>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#8b5cf6"></span>draft</div></td><td><span class="tier tier-flash">flash</span></td><td class="num">1,612</td><td class="num">6.4M</td><td class="num">3,970</td><td class="num">11.3%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#8b5cf6;width:42%"></div></div></td></tr>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#ef4444"></span>review</div></td><td><span class="tier tier-pro">pro</span></td><td class="num">821</td><td class="num">8.6M</td><td class="num">10,475</td><td class="num">15.1%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#ef4444;width:21%"></div></div></td></tr>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#06b6d4"></span>regex</div></td><td><span class="tier tier-pro">pro</span></td><td class="num">512</td><td class="num">3.4M</td><td class="num">6,640</td><td class="num">5.9%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#06b6d4;width:13%"></div></div></td></tr>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#ec4899"></span>sql</div></td><td><span class="tier tier-pro">pro</span></td><td class="num">384</td><td class="num">3.8M</td><td class="num">9,895</td><td class="num">6.7%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#ec4899;width:10%"></div></div></td></tr>
+      <tr><td><div class="verb-name"><span class="verb-dot" style="background:#fbbf24"></span>tts</div></td><td><span class="tier tier-tts">tts</span></td><td class="num">930</td><td class="num">0.5M</td><td class="num">540</td><td class="num">0.9%</td><td><div class="bar-bg"><div class="bar-fg" style="background:#fbbf24;width:24%"></div></div></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="panel">
+  <div class="panel-title">Daily Calls (last 14 days)</div>
+  <svg viewBox="0 0 800 200" style="width:100%;height:180px">
+    <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#7c3aed" stop-opacity=".5"/><stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/></linearGradient></defs>
+    <g stroke="#21262d" stroke-width=".5"><line x1="0" y1="40" x2="800" y2="40"/><line x1="0" y1="80" x2="800" y2="80"/><line x1="0" y1="120" x2="800" y2="120"/><line x1="0" y1="160" x2="800" y2="160"/></g>
+    <text x="4" y="36" fill="#6e7681" font-size="9">600</text>
+    <text x="4" y="76" fill="#6e7681" font-size="9">500</text>
+    <text x="4" y="116" fill="#6e7681" font-size="9">400</text>
+    <text x="4" y="156" fill="#6e7681" font-size="9">300</text>
+    <path d="M 40 140 L 90 122 L 140 105 L 190 110 L 240 88 L 290 95 L 340 70 L 390 78 L 440 60 L 490 50 L 540 65 L 590 42 L 640 38 L 690 30 L 740 35 L 740 200 L 40 200 Z" fill="url(#g1)"/>
+    <polyline points="40,140 90,122 140,105 190,110 240,88 290,95 340,70 390,78 440,60 490,50 540,65 590,42 640,38 690,30 740,35" fill="none" stroke="#7c3aed" stroke-width="2"/>
+    <text x="730" y="22" fill="#a78bfa" font-size="11" font-weight="600" text-anchor="end">578 today</text>
+  </svg>
+</div>
+
+<div class="footer">
+  <div>telemetry: ~/.mimo-skills/telemetry.jsonl · jq aggregation · row_count=12,450</div>
+  <div>generated: 2026-05-26T12:57 UTC+7 · <strong>uptime: 31d 04h</strong></div>
+</div>
+</body></html>

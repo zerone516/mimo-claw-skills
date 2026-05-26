@@ -13,6 +13,12 @@
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-skills-blue)](https://openclaw.ai)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
+## Live Telemetry
+
+![Verb telemetry dashboard](docs/dashboard.png)
+*30-day OpenClaw skill pack · 12,450 calls · 56.8M tokens · 8 verbs · 930 voice notes*
+
+
 ## Why this exists
 
 I run an autonomous OpenClaw assistant 24/7 on a hardened VPS. Looking at 30 days of token telemetry, **38% of all token spend went to auxiliary tasks** — log triage, code review on small diffs, regex generation, SQL drafting, doc summarize, translation. None of those need the main reasoning model.
