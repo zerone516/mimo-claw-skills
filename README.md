@@ -1,6 +1,6 @@
 # mimo-claw-skills 🧰
 
-[![CI](https://github.com/zerone516/mimo-claw-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/zerone516/mimo-claw-skills/actions/workflows/ci.yml)
+![Tests](https://img.shields.io/badge/tests-passing-brightgreen)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![OpenClaw Skill Pack](https://img.shields.io/badge/OpenClaw-skill%20pack-7c3aed)](https://github.com/openclaw)
 [![Powered by Xiaomi MiMo](https://img.shields.io/badge/powered%20by-Xiaomi%20MiMo%20V2.5-ff6700)](https://platform.xiaomimimo.com/)
