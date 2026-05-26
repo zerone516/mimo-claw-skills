@@ -1,5 +1,12 @@
 # mimo-claw-skills 🧰
 
+[![CI](https://github.com/zerone516/mimo-claw-skills/actions/workflows/ci.yml/badge.svg)](https://github.com/zerone516/mimo-claw-skills/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![OpenClaw Skill Pack](https://img.shields.io/badge/OpenClaw-skill%20pack-7c3aed)](https://github.com/openclaw)
+[![Powered by Xiaomi MiMo](https://img.shields.io/badge/powered%20by-Xiaomi%20MiMo%20V2.5-ff6700)](https://platform.xiaomimimo.com/)
+[![Skills](https://img.shields.io/badge/skills-8-blueviolet)](skills/)
+
+
 > A production-tested **OpenClaw skill pack** that wires Xiaomi MiMo V2.5 into eight high-frequency agent verbs. Drop the pack into `~/.openclaw/workspace/skills/` and your main agent immediately offloads cheap auxiliary work to MiMo, keeping its own context budget for hard reasoning.
 
 [![MiMo](https://img.shields.io/badge/Powered%20by-Xiaomi%20MiMo%20V2.5-orange)](https://platform.xiaomimimo.com)
